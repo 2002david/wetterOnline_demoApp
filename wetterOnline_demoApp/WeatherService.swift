@@ -27,7 +27,7 @@ class WeatherService: ObservableObject {
         let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(cityEncoded)&appid=\(apiKey)&units=metric&lang=de"
         
         print("cityEncoded: " + cityEncoded)
-        print("urlString: " + urlString)
+        print("urlString" + urlString)
 
         guard let url = URL(string: urlString) else {
             print("Ungültige URL")
